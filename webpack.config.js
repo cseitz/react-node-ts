@@ -23,6 +23,14 @@ let rules = [
             extensions: ['.js', '.jsx', '.ts', '.tsx', '.json']
         },
         use: 'ts-loader'
+    },
+    {
+        test: /\.s[ac]ss$/i,
+        use: [
+            'style-loader',
+            'css-loader',
+            'sass-loader',
+        ]
     }
 ]
 let plugins = [
